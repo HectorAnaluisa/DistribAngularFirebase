@@ -1,0 +1,37 @@
+
+
+<div class="grd">
+    <div class="grd-row">
+        <div class="grd-row-col-2">
+            <h1>Revisión Vehicular 2020</h1>
+            <form>
+                <label for="marca">Marca</label>
+                <input type="text" name="marca">
+                <label for="modelo">Modelo</label>
+                <input type="text" name="modelo">
+                <label for="anio">Año</label>
+                <input type="text" name="anio">
+                <label for="img">Imagen</label>
+                <input type="url" name="img">
+                <input type="submit" class="btn--blue btn--add" value="Agregar">
+            </form>
+        </div>
+        <div class="grd-row-col-4">
+            <div class="cats_container">
+                <div class="media" *ngFor="let a of autos">
+                    <div class="media-figure">
+                        <img [src]="a.data.url">
+                    </div>
+                    <div class="media-body">
+                        <p>{{a.data.marca}}</p>
+                        <p>{{a.data.modelo}}</p>
+                        <div class="btn--group">
+                            <button class="btn--green btn--s btn1">Editar</button>
+                            <button class="btn--red btn--s btn2">Eliminar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

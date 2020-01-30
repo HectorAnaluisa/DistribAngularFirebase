@@ -31,4 +31,5 @@ export class ConsumofirebaseService {
     public eliminarAuto(documentId: string) {
       return this.firestore.collection('autos').doc(documentId).delete();
     }
+  
   }

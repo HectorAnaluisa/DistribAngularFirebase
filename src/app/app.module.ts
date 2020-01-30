@@ -9,6 +9,7 @@ import { AngularFireModule } from '@angular/fire';
 import { environment } from '../environments/environment';  
 import { FirestoreSettingsToken, AngularFirestore } from '@angular/fire/firestore';
 import { AutoComponent } from './components/auto/auto.component';
+import { ReactiveFormsModule } from '@angular/forms';
 //import { AutoComponent } from './auto ';  
  
 
@@ -23,6 +24,7 @@ import { AutoComponent } from './components/auto/auto.component';
     AppRoutingModule, 
     HttpClientModule, 
     AngularFireModule.initializeApp(environment.firebase), 
+    ReactiveFormsModule,
   ],
   providers: [
     AngularFirestore, 
